@@ -1,23 +1,19 @@
-## Como rodar o projeto
+# StreamFit - API
 
-Primeiro, instale as dependências:
+Guia completo para instalação, configuração e teste das rotas da API StreamFit.
 
+---
+
+## 🚀 Configuração Inicial do Projeto
+
+Execute os comandos abaixo na raiz do projeto para criar a estrutura, instalar dependências e configurar o banco de dados.
+
+### 1. Inicializar o projeto e instalar dependências
 ```bash
-npm i
-```
-
-crie o .env
-
-DATABASE_URL="postgresql://postgres:senai@localhost:5432/ra_ana?schema=public"
-
-Depois execute:
+npm init -y
+npm i express nodemon dotenv cors
+npx create-db
+criar o .env: DATABASE_URL="postgresql://postgres:senai@localhost:5432/streamfit?schema=public"
 npx prisma generate
-npx prisma migrate dev
-
-Por último, inicie o projeto:
+npx prisma migrate dev --name init
 npm run dev
-
-baixe o thunderclient
-teste a api
-
-rota: localhost:3000/treinos
