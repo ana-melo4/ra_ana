@@ -1,8 +1,16 @@
-# StreamFit - API
+como rodar: (lembrar de colocar no auto-save)
+npm i =
+criar o .env =
+npx prisma generate =
+npx prisma migrate dev =
+npm run dev =
 
-Guia completo para instalação, configuração e teste das rotas da API StreamFit.
 
----
+criar arquivo .env =
+
+DATABASE_URL="postgresql://postgres:senai@localhost:5432/rawiller?schema=public"
+
+
 
 ## 🚀 Configuração Inicial do Projeto
 
