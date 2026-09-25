@@ -17,3 +17,5 @@ criar o .env: DATABASE_URL="postgresql://postgres:senai@localhost:5432/streamfit
 npx prisma generate
 npx prisma migrate dev --name init
 npm run dev
+
+http://localhost:3000/treinos
